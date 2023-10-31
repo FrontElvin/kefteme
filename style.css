@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url(fonts/AnonymousPro-Regular.ttf);
+}
+
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  margin: 0 auto;
+}
+
+h1 {
+    font-family: "Anonymous Pro", sans-serif;
+    font-size: 56px;
+}
+
+h2 {
+  font-family: "Anonymous Pro", sans-serif;
+  color: #121723;
+	font-size: 48px;
+  font-weight: 700;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 25px ;
+}
+
+
+h3 {
+  font-family: "Anonymous Pro", sans-serif;
+	font-size: 26px;
+  color: #121723;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #121723;
+}
+
+
+/*Header*/
+.header {
+  background: white;
+  padding: 20px 0px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Navigation*/
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.nav__links {
+  text-decoration: none;
+  color: black;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+/*Content*/
+.content {
+  margin-bottom: 50px;
+}
+/*Sneakers*/
+
+.sneakers {
+	display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex: 1 1 0;
+  border-radius: 12px;
+  padding: 32px 24px 32px 24px;
+  background: white;
+}
+.card__image {
+  max-width: 370px;
+}
+
+/*Footer*/
+.footer {
+  background: #121723 ;
+  color: white;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.menu__footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.nav__links__footer {
+  text-decoration: none;
+  color: white;
+  font-family: Anonymous Pro;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footer_inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  z-index: 1;
+  width: 1000px;
+  height: 3px;
+  background-color: yellow;
+} 
+.copyright {
+  font-family: "Anonymous Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #A1A6B4;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #A1A6B4;
+}
