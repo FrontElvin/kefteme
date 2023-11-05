@@ -159,3 +159,74 @@ p {
   padding: 20px 0;
   border-top: 1px solid #A1A6B4;
 }
+
+/*Page-Sneaker------------------------------------------------------------*/
+.sneaker {
+  margin: 32px 0;
+}
+.sneaker__content {
+  border-radius: 50px;
+}
+.sneaker__img {
+  max-height: 600px;
+}
+.sneaker__title h2, .sneaker__subtitle h3 {
+  margin: 0;
+}
+.sneaker__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+  background-color: #fff;
+  padding: 32px 24px;
+  font-family: "Anonymous Pro", sans-serif;
+}
+.sneaker__info {
+  display: flex;
+  gap: 32px;
+}
+.sneaker__text {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.sneaker__parameters {
+  width: 50%;
+}
+.sneaker__parameters {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.parameters__title h4 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+.parameters__title {
+  position: relative;
+  font-size: 20px;
+}
+.parameters__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #121723;
+  width: 100%;
+  top: 45px;
+}
+.parameter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.parameter::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #121723;
+  width: 100%;
+  top: 25px;
+}
