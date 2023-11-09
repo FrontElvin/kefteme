@@ -30,6 +30,7 @@ h2 {
   color: #121723;
 	font-size: 48px;
   font-weight: 700;
+  margin: 32px 0;
 }
 .container {
   width: 100%;
@@ -58,6 +59,7 @@ p {
 .header {
   background: white;
   padding: 20px 0px;
+  border-bottom: 1px solid #676B73;
 }
 .header__inner {
   display: flex;
@@ -86,27 +88,38 @@ p {
 }
 /*Content*/
 .content {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 /*Sneakers*/
 
 .sneakers {
 	display: flex;
-  gap: 25px;
+  gap: 24px;
   flex-wrap: wrap;
-  
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   flex: 1 1 0;
   border-radius: 12px;
-  padding: 32px 24px 32px 24px;
   background: white;
 }
+
+.card__info {
+  padding: 32px 24px;
+}
+
+.card__title h3 {
+  line-height: 0.5;
+}
+
+.card__text {
+  margin: 0;
+}
+
 .card__image {
   max-width: 370px;
 }
@@ -158,6 +171,33 @@ p {
   text-align: center;
   padding: 20px 0;
   border-top: 1px solid #A1A6B4;
+}
+/*Versia de la Mobila*/
+@media screen and (max-width:768px) {
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .card__image {
+    max-width: 343px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 /*Page-Sneaker------------------------------------------------------------*/
