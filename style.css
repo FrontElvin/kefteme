@@ -206,6 +206,13 @@ p {
   margin: 32px 0;
 }
 .sneaker__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+  background-color: #fff;
+  padding: 32px 24px;
+  font-family: "Anonymous Pro", sans-serif;
   border-radius: 50px;
 }
 .sneaker__img {
@@ -214,15 +221,7 @@ p {
 .sneaker__title h2, .sneaker__subtitle h3 {
   margin: 0;
 }
-.sneaker__content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 24px;
-  background-color: #fff;
-  padding: 32px 24px;
-  font-family: "Anonymous Pro", sans-serif;
-}
+
 .sneaker__info {
   display: flex;
   gap: 32px;
@@ -270,4 +269,45 @@ p {
   background-color: #121723;
   width: 100%;
   top: 25px;
+}
+/*Page dlya tvoy Xiaomi*/
+@media screen and (max-width:430px) {
+  
+  .container {
+    padding: 0 16px;
+  }
+
+  .sneaker__content {
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .sneaker__img {
+    max-width: 295px;
+    max-height: 175px;
+    margin-bottom: 8px;
+  }
+
+  .sneaker__title h2 {
+    font-size: 32px;
+  }
+
+  .sneaker__subtitle h3 {
+    font-size: 20px;
+  }
+
+  .sneaker__info {
+    flex-direction: column;
+  }
+
+  .sneaker__text {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .sneaker__parameters {
+    width: 100%;
+    margin: 8px 0;
+  }
+
 }
