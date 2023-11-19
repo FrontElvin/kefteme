@@ -226,7 +226,7 @@ p {
   border-radius: 50px;
 }
 .sneaker__img {
-  max-height: 600px;
+  margin: 0 auto;
 }
 .sneaker__title h2, .sneaker__subtitle h3 {
   margin: 0;
